@@ -17,7 +17,7 @@ public class Game implements Runnable {
         startScreen.addMouseListener(new MouseAdapter() {
             public void mousePressed(MouseEvent e) {
                 int numPlayers = startScreen.selectPlayers(e);
-                if (numPlayers != -2) {
+                if (numPlayers != -1) {
                     startScreen.setVisible(false);
                     startScreen.setEnabled(false);
                     initializeGame(frame, numPlayers);
